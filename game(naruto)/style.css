@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+}
+.container {
+    background-image: url(5151136.webp);
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    
+
+}
+.naruto{
+    background-image: url(p7842736_i_v9_aa.jpg);
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    position: absolute;
+    bottom: 0px;
+    right: 50px;
+
+}
+.sasuke{
+    background-image: url(images.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+}
+.kakashi{
+    background-image: url(kakashi-png-hd.png);
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    background-size: contain;
+    top: 50px;
+    right: 8px;
+    background-repeat: no-repeat;
+}
+.jump_naruto{
+    animation: naruto 0.5s linear;
+}
+@keyframes naruto {
+    0%{
+        bottom: 0;
+    }
+    50%{
+        bottom: 500px;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+@keyframes sasukego {
+    0%{
+        left: 100vw;
+    }
+    100%{
+        left: 10vh;
+    }
+
+}
+.sasukego {
+    animation: sasukego 3.5s linear infinite reverse;
+}
+.gameOver{
+    visibility: hidden;
+    position: relative;
+    text-align: center;
+    top: 50px;
+    font-size: 64px;
+    font-family: limestone;
+    color: red;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.89);
+    font-weight: 700;
+}
+#yourscore{
+    position: relative;
+    left: 50px;
+    top: 20px;
+    font-family: sans-serif;
+    margin: 0 20px;
+    font-size:38px ;
+}
